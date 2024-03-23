@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* Header Section */
+
+nav a{
+    color: black !important;
+    margin-right: 15px;
+}
+
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: none;
+}
+
+.fa-bars {
+    display: flex !important;
+}
+
+@media(min-width: 768px){
+    nav{
+        display: inline-flex;
+    }
+
+    .fa-bars {
+        display: none !important;
+    }
+
+}
+
+
+/* Introduce Section */
+
+.introduce{
+    display: block;
+}
+
+.introduce .left-sidebar-intro{
+    padding-top: 50px;
+}
+
+.introduce .left-sidebar-intro h1{
+    color: #FF8A56;
+    font-size: 36px;
+}
+
+.introduce .left-sidebar-intro span{
+    color: #000000;
+}
+
+.introduce .left-sidebar-intro p{
+    margin-top: 27px;
+    font-size: 18px;
+    color: #666666;
+}
+
+.introduce_Btn{
+    display: flex;
+}
+
+.call_book_btn a{
+    background: #222;
+    color: white;
+    width: 151px;
+    height: 58px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download_cv_btn a{
+    background: white;
+    color: #222;
+    width: 151px;
+    height: 58px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.download_cv_btn a i{
+    margin-left: 10px;
+}
+
+.download_cv_btn a:hover{
+    background-color: #222;
+    color: white;
+    transition: 1s;
+}
+
+@media(min-width: 768px){
+
+    .introduce{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .introduce .left-sidebar-intro h1{
+        font-size: 48px;
+    }
+
+    .introduce .left-sidebar-intro p {
+        font-size: 18px;
+    }
+
+    .introduce .left-sidebar-intro{
+        padding-top: 30px;
+    }
+
+}
+
+
+@media(min-width: 992px){
+    .introduce .left-sidebar-intro{
+        padding-top: 80px;
+    }
+
+}
+
+
+/* Company Section */
+
+.company_img img{
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+}
+
+
+@media(min-width: 768px){
+    .company_img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+}
